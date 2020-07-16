@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cropprediction">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="Predict Crop"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".ShowCrupActivity"
+            android:label="Predict Crop"
+            android:parentActivityName=".DrawerActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="Registration" />
+        <activity
+            android:name=".DrawerActivity"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowNea<intent-filterrBy"
+            android:label="Near By Farmer"
+            android:parentActivityName=".DrawerActivity"
+            name="" />
+        <activity
+            android:name=".PesticidesActivity"
+            android:label="Pesticides"
+            android:parentActivityName=".HomeScreen"></activity>
+        <activity
+            android:name=".PesticideTimeTableActivity"
+            android:label="TimeTable"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".DisplayNearByFarmer"
+            android:label="Farmers"
+            android:parentActivityName=".HomeScreen" />
+        <activity
+            android:name=".GuideActivity"
+            android:label="Guide"
+            android:parentActivityName=".HomeScreen"></activity>
+        <activity android:name=".HomeScreen1" />
+        <activity
+            android:name=".VedioActivity"
+            android:label="Video"></activity>
+    </application>
+
+</manifest>
